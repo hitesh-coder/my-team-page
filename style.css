@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  padding: 15vh 15vw;
+}
+
+.page .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 80px;
+}
+
+.page .text .tag {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+.page .text .tag h1 {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+
+.page .text .message {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.page .text .message h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.page .text .message p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.page .gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page .gallery .item2, .page .gallery .item5 {
+  margin-top: 10vh;
+}
+
+.page .gallery .photo {
+  width: 25vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.page .gallery .photo div img {
+  width: 17vw;
+  height: 42vh;
+}
+
+.page .gallery .photo div h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.page .gallery .photo div h4 {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 16px;
+  /* identical to box height */
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  -webkit-transform: rotate(90deg) translate(50%, 140%);
+          transform: rotate(90deg) translate(50%, 140%);
+}
+
+footer {
+  height: 5vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+footer a {
+  font-weight: 700;
+  color: #a1a1a1;
+}
+
+@media screen and (max-width: 850px) {
+  .page {
+    padding: 10vh 5vw;
+  }
+  .page .gallery .photo {
+    height: 27vh;
+  }
+  .page .gallery .photo div img {
+    height: 22vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .page {
+    padding: 1rem;
+  }
+  .page .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page .text .tag {
+    margin-bottom: 10vh;
+  }
+  .page .text .message p {
+    font-size: 14px;
+  }
+  .page .gallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .page .gallery .item1 h4 {
+    -webkit-transform: rotate(90deg) translate(50%, 40px) !important;
+            transform: rotate(90deg) translate(50%, 40px) !important;
+  }
+  .page .gallery .item2 {
+    place-items: right normal;
+  }
+  .page .gallery .item4 {
+    margin-top: 10vh;
+  }
+  .page .gallery .item5 {
+    margin-top: 0;
+  }
+  .page .gallery .item6 {
+    margin-top: 10vh;
+  }
+  .page .gallery .photo {
+    height: 34vh;
+  }
+  .page .gallery .photo div img {
+    width: 35vw;
+    height: 30vh;
+  }
+  .page .gallery .photo div h4 {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=style.css.map */
